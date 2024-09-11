@@ -8,11 +8,8 @@ public class App {
         //System.out.println("Hola hola");
 
         // declaración
-        Estudiante juan = new Estudiante(4444444);
-        System.out.println();
-        juan.id_credencial = 23;
-        juan.nombre = "Juan alberto";
-        Estudiante perla = new Estudiante(12345,342,2,20,2,"Perla María","C");
+        Estudiante juan = new Estudiante();
+        
         
         System.out.println();
     }

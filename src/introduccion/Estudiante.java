@@ -19,10 +19,9 @@ public class Estudiante {
     public Estudiante(){
         this.credencial = new Credencial(null,null,0,null, null,null);
         id_lista = 0;
-        edad = -10;
+        edad = 0;
         semestre = 0;
-        
-        grupo = "Desconocido";
+        grupo = null;
     }
     public Estudiante(Credencial credencial){
         // this
