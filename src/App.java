@@ -4,13 +4,23 @@ import introduccion.Fecha;
 
 public class App {
     public static void main(String[] args) throws Exception {
-       Fecha fecha = new Fecha(2, 3, 1994);
-       System.out.println(fecha.getDia());
-       System.out.println(fecha.getMes());
-       System.out.println(fecha.getAnio());
+       
+        Estudiante perla = new Estudiante();
+        Estudiante juan = new Estudiante();
+        Estudiante alina = new Estudiante();
+        Estudiante claudia = new Estudiante();
+        Estudiante paulina = new Estudiante();
 
-       fecha.setAnio(2000);
-       System.out.println(fecha.getAnio());
+        Estudiante grupoA [] = new Estudiante[5];
+        grupoA[0] = perla;
+        grupoA[1] = juan;
+        grupoA[2] = alina;
+        grupoA[3] = claudia;
+        grupoA[4] = paulina;
 
+        for(int x=0; x < grupoA.length; x++){
+
+            grupoA[x].getCredencial().getNombre();
+        }
     }
 }

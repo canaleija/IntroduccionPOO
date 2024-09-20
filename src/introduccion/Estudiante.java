@@ -41,4 +41,37 @@ public class Estudiante {
         this.grupo = grupo;
 
     }
+    public Credencial getCredencial() {
+        return credencial;
+    }
+    public void setCredencial(Credencial credencial) {
+        this.credencial = credencial;
+    }
+    public int getId_lista() {
+        return id_lista;
+    }
+    public void setId_lista(int id_lista) {
+        this.id_lista = id_lista;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public int getSemestre() {
+        return semestre;
+    }
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
+    }
+    public String getGrupo() {
+        return grupo;
+    }
+    public void setGrupo(String grupo) {
+        this.grupo = grupo;
+    }
+
+
+    
 }
