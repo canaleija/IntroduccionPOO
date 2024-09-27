@@ -2,7 +2,7 @@ package introduccion;
 
 
 // atributos globales (clase)
-public class Estudiante {
+public class Estudiante extends Persona {
     // atributos variables
     public Credencial credencial;
     //public int id_credencial;
@@ -23,10 +23,14 @@ public class Estudiante {
         semestre = 0;
         grupo = null;
     }
-    public Estudiante(Credencial credencial){
-        // this
+    public Estudiante(String nombre, Credencial credencial){
+        // this  
        this();
        this.credencial = credencial;
+       super.setNombre(nombre);
+       this.credencial.setNombre(nombre);
+       
+
        
     }
 
@@ -72,6 +76,9 @@ public class Estudiante {
         this.grupo = grupo;
     }
 
+    public void saludar(){
+        System.out.println("Hola soy "+super.getNombre()+" y soy estudiante");
 
+    }
     
 }
