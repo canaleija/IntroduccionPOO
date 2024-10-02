@@ -1,23 +1,15 @@
-import javax.swing.JFrame;
 
-import introduccion.Credencial;
-import introduccion.Estudiante;
-import introduccion.Persona;
+
+import herencia.NuevoFrame;
+
 
 
 public class App {
     public static void main(String[] args) throws Exception {
        
-    Credencial credencial = new Credencial(null, null, 0, null, null, null);
-    Estudiante beto = new  Estudiante("Alberto",credencial);
-    System.out.println();
-        beto.saludar();
+        NuevoFrame frame = new NuevoFrame("Nuevo Frame", 400, 600);
+        //NuevoFrame frame2 = new NuevoFrame("Nuevo Frame 2", 600, 400);
 
-    Persona paola = new Persona("Paola");
-    paola.saludar();
-
-    // polmorfismo
-    Persona juan = new Estudiante();
-    juan.sa
+        
     }
 }
