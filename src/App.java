@@ -1,15 +1,21 @@
 
 
 import herencia.NuevoFrame;
+import abstraccion.Cadenero;
+import abstraccion.Gente;
 
 
 
 public class App {
     public static void main(String[] args) throws Exception {
        
-        NuevoFrame frame = new NuevoFrame("Nuevo Frame", 400, 600);
-        //NuevoFrame frame2 = new NuevoFrame("Nuevo Frame 2", 600, 400);
+        Gente maria = new Gente("Maria");
+        //maria.bailar();
+        Gente juan = new Gente("Juan Alberto");
+        //juan.bailar();
 
+        Cadenero john = new Cadenero();
+        john.dejarEntrar(juan); 
         
     }
 }
