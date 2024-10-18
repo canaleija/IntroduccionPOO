@@ -17,10 +17,10 @@ public class EscuchadorBoton implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         JButton btn = (JButton)e.getSource();
         if(btn.getText().equals("Boton A")){
-            frame.getCajaTexto().setText("pablito");
+            frame.getCajaTexto().setText(frame.getCajaTexto().getText()+" pablito");
         }
         if(btn.getText().equals("Boton B")){
-            frame.getCajaTexto().setText("Reprobe ecuaciones");
+            frame.getCajaTexto().setText(frame.getCajaTexto().getText()+" reprobe ecuaciones");
         }
     }
     
