@@ -13,6 +13,8 @@ public class JFramePrueba extends JFrame{
     public JFramePrueba (){
         setSize(80, 150);
         this.botonA = new JButton("Boton A");
+        EscuchadorBoton pedrito = new EscuchadorBoton();
+        this.botonA.addActionListener(pedrito);
         this.botonB = new JButton("Boton B");
         this.cajaTexto = new JTextField("None");
         // definir el layout
