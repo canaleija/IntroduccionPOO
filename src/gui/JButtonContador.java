@@ -3,7 +3,7 @@ package gui;
 import javax.swing.JButton;
 
 public class JButtonContador extends JButton {
-    public int contador;
+    private int contador;
 
     public JButtonContador (){
         this.contador = 0;
@@ -13,5 +13,9 @@ public class JButtonContador extends JButton {
     public void actualizar (){
         this.contador++;
         setText(""+this.contador);
+    }
+
+    public int getContador() {
+        return contador;
     }
 }
